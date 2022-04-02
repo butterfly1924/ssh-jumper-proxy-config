@@ -7,7 +7,7 @@ Host 192.168.23.2:8080
   HostName 192.168.23.2:8080
   Port 22
   ForwardX11 no
-  ProxyCommand "nc -x 192.168.23.2:8080 %h %p"
+  ProxyCommand "nc -X 5 -x 192.168.23.2:8080 %h %p"
   User username
   
 ```
